@@ -66,7 +66,7 @@ function App ( ) { //TestIt
     <br/>
       <form onSubmit={handleSubmit} id='form-enter'>
         <fieldset>
-          <label>Email:</label>
+          <label class="lead" style="margin: 60px">Email:</label>
           <input name="email" type="email" onChange={changeHandlerEmail} />
         </fieldset>
         <br/>
@@ -74,7 +74,7 @@ function App ( ) { //TestIt
           <input name="image" type="file" onChange={changeHandler} accept=".jpeg, .png, .jpg"/>
           {isFilePicked ? <img src={URL.createObjectURL(selectedFile)} height='64' width='64'/> : <img src='https://mag-efir.com/upload/iblock/af7/af70208cea7627be119710fe335cd6f3.jpg' height='64' width='64' />}
         </fieldset>
-        <Button type="submit" onClick={changeHandleClick}>Отправить</Button>
+        <Button type="submit" onClick={changeHandleClick} class="lead" style="margin: 60px">Отправить</Button>
       </form>
       <br/>
       <div>
